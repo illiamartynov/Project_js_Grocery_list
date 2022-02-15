@@ -1,7 +1,9 @@
 
 /* BUTTON CREATE LIST & BUTTON SET RANDOM BACK*/
 
-.createBtn {
+@media screen and (min-width: 1440px){
+ 
+  .createBtn {
     border-radius: 10px;
     position: relative;
     display: inline-block;
@@ -84,8 +86,12 @@
     font-family: 'Roboto', sans-serif;
     text-transform: initial;
     color: white;
+    
   }
 
+  
+  }
+  
 
 
 
@@ -97,5 +103,173 @@
 
 
 
+/* ------------------------------------------------------------------------ TABLET VERSION ------------------------------------------------------------------- */
 
 
+
+
+
+
+
+
+
+   @media screen and (min-width: 768px ) and (max-width: 1439px){
+    
+  
+    
+   .button_menu{
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+   }
+  
+   
+  
+    .non_opacity_btn {
+      
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      padding: 20px 80px;
+      margin: 140px 20px;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%);
+      background-size: 200% auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+      transition: .5s;
+      border: transparent;
+      cursor: pointer;
+    }
+    .non_opacity_btn:hover {
+      background-position: right center;
+    }
+  
+  
+  
+  
+    /* SETTINGS FOR TEXT ON THE BUTTON */
+    .text_button{
+      font-size: 50px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: initial;
+      color: white;
+      
+    }
+    .opacity_btn{
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ MOBILE VERSION ------------------------------------------------------------------- */
+
+
+
+
+
+
+  @media screen and (min-width: 320px)and (max-width: 767px){
+   
+    .createBtn {
+      border-radius: 10px;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px; 
+    }
+    
+    .createBtn select {
+      border-radius: 10px;
+      cursor:pointer;
+      background-color: #C3A56D;
+      color: #fff;
+      font-size: inherit;
+      padding: .5em;
+      padding-right: 2.5em;	
+      border: 0;
+      margin: 0;
+      border-radius: 3px;
+      text-indent: 0.01px;
+      text-overflow: '';
+      -webkit-appearance: button; 
+    }
+    
+   
+  
+    .createBtn::before { 
+      border-radius: 10px;
+      width: 2em;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    .createBtn select[disabled] {
+      color: rgba(0,0,0,.3);
+    }
+    
+    .createBtn select[disabled]::after {
+      color: rgba(0,0,0,.1);
+    }
+    
+    .createBtn::before {
+      background-color: rgba(0,0,0,.15);
+    }
+    
+    .createBtn::after {
+      color: rgba(0,0,0,.4);
+    }
+    
+  
+    .createBtn {
+      
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      padding: 15px 50px;
+      margin: 10px 20px;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%);
+      background-size: 200% auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+      transition: .5s;
+      border: transparent;
+      cursor: pointer;
+    }
+    .createBtn:hover {
+      background-position: right center;
+    }
+  
+  
+  
+  
+    /* SETTINGS FOR TEXT ON THE BUTTON */
+    .text_button{
+      font-size: 32px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: initial;
+      color: white;
+      
+    }
+    .opacity_btn {
+      display: none
+    }
+    
+    }
+    
+  

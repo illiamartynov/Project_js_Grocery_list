@@ -1,0 +1,159 @@
+/* ------------------------------------------------------------------------ TABLET VERSION ------------------------------------------------------------------- */
+
+  @media screen and (min-width: 768px)and (max-width: 1439px){
+      
+       .menu-triger {
+        background: url(../images/menu.png) 0 0 repeat;
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 26px;
+        top: -2px;
+}	
+.menu-close {
+    background: url(../images/closed.png) 0 0 repeat;
+    display: block;
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    right: 21px;
+    top: 7px;
+    z-index: 100;
+}
+.menu-popup {
+	background-image: linear-gradient(to right, #C3A56D 0%, #88611B 0%, #C3A56D 100%);
+	display: none;
+	position: absolute;
+	right: -110%;
+	top: -12%;
+	width: 250px;
+	box-sizing: border-box;
+	padding: 30px;
+	z-index: 9999;	
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+	margin: 0;
+	padding: 0;
+}
+.menu-popup li {
+	list-style: none;
+	margin: 16px 0;
+	padding: 0;
+}
+.menu-popup li a {
+	font-size: 17px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	line-height: 1.4;	
+	text-decoration: none;
+}
+
+
+   }
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ PC VERSION ------------------------------------------------------------------- */
+
+
+
+
+   @media screen and (min-width: 1440px){
+.menu{
+display: none;
+}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ MOBILE VERSION ------------------------------------------------------------------- */
+
+
+
+
+   @media screen and (min-width: 320px) and (max-width: 767px){
+    .menu-triger {
+        background: url(../images/menu.png) 0 0 repeat;
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 18px;
+        top: -5px;
+}	
+.menu-close {
+    background: url(../images/closed.png) 0 0 repeat;
+    display: block;
+    width: 39px;
+    height: 40px;
+    position: absolute;
+    right: 21px;
+    top: 7px;
+    z-index: 100;
+}
+.menu-popup {
+	background-image: linear-gradient(to right, #C3A56D 0%, #88611B 0%, #C3A56D 100%);
+	display: none;
+	position: absolute;
+	right: -110%;
+	top: -12%;
+	width: 250px;
+	box-sizing: border-box;
+	padding: 30px;
+	z-index: 9999;	
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+	margin: 0;
+	padding: 0;
+}
+.menu-popup li {
+	list-style: none;
+	margin: 16px 0;
+	padding: 0;
+}
+.menu-popup li a {
+	font-size: 17px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	line-height: 1.4;	
+	text-decoration: none;
+}
+
+
+.item_of_menu:nth-child(){
+display: none;
+}
+
+.invis_item_of_back{
+    display: none;
+}
+   } 
+
+
+
