@@ -10,7 +10,15 @@
     <title>Menu</title>
 </head>
 <body>
-    
+    <header class="site-header">
+      <div class="container-free">
+        <select class="change-lang">
+          <option value="ua">UA</option>
+          <option value="ru">RU</option>
+          <option value="en" selected>EN</option>
+        </select>
+      </div>
+    </header>
 
    
 
@@ -20,12 +28,12 @@
     
       <div id="groceries">
         <div class="div_title" id="title">
-          <h1 class="title">Grocery List App</h1>
+          <h1 class="lng-notButton" class="title">Grocery List App</h1>
         </div>
         <div class="button_menu">
-         <button class="createBtn"> <a class="text_button" href="./list.html">Create&nbsp;List</a></button>
-         <button id="submit" class="createBtn"><span class="text_button">Set Random Background</span> </button>
-         <button id="setDfltBack" class="createBtn"><span class="text_button">Sett Default Background</span> </button>
+         <button class="createBtn"> <a class="lng-button1" class="text_button" href="./list.html">Create&nbsp;List</a></button>
+         <button id="submit" class="createBtn"><span class="lng-button2" class="text_button">Set Random Background</span> </button>
+         <button id="setDfltBack" class="createBtn"><span class="lng-button3" class="text_button">Sett Default Background</span> </button>
         </div>
          
         
@@ -33,7 +41,9 @@
     </div>
     </div>
   </main>
-    <script src="../js/script.js"></script>
-    <script src="../js/change_color.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/change_color.js"></script>
+    <script src="./js/lng.js"></script>
+    <script src="/Project_js_Grocery_list/js/changeLng.js"></script>
 </body>
 </html>
