@@ -14,7 +14,7 @@
   .createBtn select {
     border-radius: 10px;
     cursor:pointer;
-    background-color: #C3A56D;
+    /* background-color: #C3A56D; */
     color: #fff;
     font-size: inherit;
     padding: .5em;
@@ -38,7 +38,7 @@
     border-radius: 0 3px 3px 0;
   }
   
-  .createBtn select[disabled] {
+  /* .createBtn select[disabled] {
     color: rgba(0,0,0,.3);
   }
   
@@ -52,7 +52,7 @@
   
   .createBtn::after {
     color: rgba(0,0,0,.4);
-  }
+  } */
   
 
   .createBtn {
@@ -66,7 +66,7 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%);
+    /* background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%); */
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;

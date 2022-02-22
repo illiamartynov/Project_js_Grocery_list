@@ -123,19 +123,12 @@
       div_class: 'div_class',
       money_src: './images/money.png',
       bag_src: './images/shopping-bag.png',
+      class_input: 'input_amount',
 
     }
   
-  // const li_item = `
-  // <li class = ${imageObject.li_contains} key=${user_insert}>
-  //   - ${user_insert} 
-  //   <div class = ${imageObject.div_class}>
-  //     <img class = ${imageObject.class_bin} src = ${imageObject.src_bin}> 
-  //     <img class = ${imageObject.class_bin} src = ${imageObject.money_src}> 
-  //     <img class = ${imageObject.class_bin} src = ${imageObject.bag_src}>
-  //   </div>
-  // </li>`
-    
+    // const li_item = `<li class = ${imageObject.li_contains}>- ${user_insert} <div class = ${imageObject.div_class}><img class = ${imageObject.class_bin} src = ${imageObject.bag_src}> <img class = ${imageObject.class_bin} > <img class = ${imageObject.class_bin} src = ${imageObject.src_bin}></div></li>`
+    // const key_with_input = `<li class = ${imageObject.li_contains}>- ${user_insert} <div class = ${imageObject.div_class}><input name = weigth class = ${imageObject.class_input} > <img class = ${imageObject.class_bin} src = ${imageObject.src_bin}></div></li>`
 
 
 
@@ -172,14 +165,16 @@
 
 
   // list_of_all_items.addEventListener("click", (e) => {
-  //   console.log(e.target);
-  //   // if( list_of_all_items.style.textDecoration != "line-through"){
-  //   //   list_of_all_items.style.textDecoration = "line-through";
-  //   // }
+  //   const input_amount = document.createElement("input")
+  //   e.target.parentNode.appendChild(input_amount);
+    
+  //   if( e.target.style.textDecoration != "line-through")
+  //     e.target.style.textDecoration = "line-through";
+    
    
-  //   // else{
-  //   //   list_of_all_items.style.textDecoration = "none";
-  //   // }
+  //   else
+  //     e.target.style.textDecoration = "none";
+    
     
   // })
 
