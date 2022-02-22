@@ -1,0 +1,53 @@
+body{
+ 
+    background-color: darkblue			;
+  }
+  #groceries{
+    
+    background-color: darkcyan	;
+    box-shadow: 10px 10px 24px 0px rgba(247, 0, 0, 0.5);  
+  }
+  #input input{
+    
+    border-bottom: 3px solid black;
+  }
+
+  
+.title{
+    color: darkolivegreen; 
+    
+     text-shadow: rgb(202, 11, 11) 1px 1px 0, rgb(255, 0, 0) 2px 2px 0, 
+    rgb(255, 0, 0) 3px 3px 0, rgb(255, 0, 0) 4px 4px 0, 
+    rgb(255, 0, 0) 5px 5px 0;
+    
+  }
+
+  .createBtn select {
+   
+    background-color: darkorange;
+  }
+
+     .createBtn select[disabled] {
+    color: rgba(0,0,0,.3);
+  }
+  
+  .createBtn select[disabled]::after {
+    color: rgba(0,0,0,.1);
+  }
+  
+  .createBtn::before {
+    background-color: rgba(0,0,0,.15);
+  }
+  
+  .createBtn::after {
+    color: rgba(0,0,0,.4);
+  }
+
+
+  
+  .createBtn {
+    
+   
+    background-image: linear-gradient(to right, #000000 0%, #0a0092 51%, #88eb06 100%);
+   
+  }
