@@ -1,11 +1,10 @@
-$(document).ready(function(){
-    $('.single-item-rtl').slick({
-        rtl: true,
-        accessibility: true,
-        adaptiveHeight: true,
-        arrows: true,
-        dots: true,
-        dotsClass: "my dots",
-        mobileFirst: true
+$(document).on('ready', function() {
+    $(".your_class").slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
     });
-  });
+});

@@ -12,23 +12,23 @@ body{
 }
 
 .header_style{
- position: absolute;
- top:7%;
-left:50%;
-transform:translate(-50%, -50%);
-width: fit-content;
+  position: absolute;
+  top:7%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width: fit-content;
 
 
 }
 
 .header_contain{
   position: absolute;
- top:10%;
-left:50%;
-transform:translate(-50%, -50%);
+  top:10%;
+  left:50%;
+  transform:translate(-50%, -50%);
   display: flex;
   height: 100px;
-width: 600px;
+  width: 600px;
 }
 
 .container{
