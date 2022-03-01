@@ -1,7 +1,7 @@
 const btn = document.querySelector("#theme-button");
 const link = document.querySelector("#theme-link");
 
-// btn.addEventListener("click", ChangeTheme);
+btn.addEventListener("click", ChangeTheme);
 
 function ChangeTheme()
 {

@@ -187,8 +187,17 @@
 
   // ====================================================================================
 const list_of_all_items = document.querySelector('#all_items')
-const pencil = document.querySelector("#pencil")
+// const item_back = document.querySelector('.itemInput')
 const inputRef = document.querySelector("#user_input")
+
+document.querySelector("#pencil").addEventListener("click", () => {
+    document.querySelector("#all_items").textContent = "";
+  })
+  
+  document.querySelector("#user_input").addEventListener("keydown", (event) => {
+    if(event.key == "Enter")
+    addItemToList();
+  });
 
 const addItemToList = (e) => {
   const user_insert = inputRef.value;
@@ -197,7 +206,6 @@ const addItemToList = (e) => {
     <span class=decoration>- ${user_insert}</span>
     <div class = ${imageObject.div_class}>
       <img class = ${imageObject.class_bin} src = ${imageObject.src_bin}> 
-      <img class = ${imageObject.class_bin} src = ${imageObject.money_src}> 
       <img class = "${imageObject.class_bin} bag" src = ${imageObject.bag_src}>
       <input class="itemInput nowiev"/>
     </div>
@@ -219,17 +227,26 @@ const clickOnItem = (e) => {
     }
   }
 }
+// const remove_input_function = (e) => {
+//   console.log(e);
+// }
+
  
 const clickOnBag = (e) => {
   if (e.target.tagName === 'IMG') {
     if (e.target.classList.contains('bag')) {
       e.target.classList.add('nowiev')
       e.target.parentNode.querySelector('.itemInput').classList.remove('nowiev')
+
+
+
     }
   }
+  
 }
 
 
+  // item_back.addEventListener('change', remove_input_function)
   inputRef.addEventListener('change', addItemToList)
   list_of_all_items.addEventListener("click", clickOnItem)
   list_of_all_items.addEventListener("click", clickOnBag)
