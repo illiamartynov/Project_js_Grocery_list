@@ -187,27 +187,30 @@
 
   // ====================================================================================
 const list_of_all_items = document.querySelector('#all_items')
-// const item_back = document.querySelector('.itemInput')
 const inputRef = document.querySelector("#user_input")
+const item_back = document.querySelector('.itemInput')
+const item_span = document.querySelector('.span-bag')
+
 
 document.querySelector("#pencil").addEventListener("click", () => {
     document.querySelector("#all_items").textContent = "";
   })
   
-  document.querySelector("#user_input").addEventListener("keydown", (event) => {
-    if(event.key == "Enter")
-    addItemToList();
-  });
+  // document.querySelector("#user_input").addEventListener("keydown", (event) => {
+  //   if(event.key == "Enter")
+  //   addItemToList();
+  // });
 
 const addItemToList = (e) => {
   const user_insert = inputRef.value;
   const li_item = `
   <li class = ${imageObject.li_contains}>
     <span class=decoration>- ${user_insert}</span>
+    <span class=span-bag decoration></span>
     <div class = ${imageObject.div_class}>
       <img class = ${imageObject.class_bin} src = ${imageObject.src_bin}> 
       <img class = "${imageObject.class_bin} bag" src = ${imageObject.bag_src}>
-      <input class="itemInput nowiev"/>
+      <input class="itemInput nowiev" autofocus/>
     </div>
   </li>`
   list_of_all_items.insertAdjacentHTML('beforeend', li_item)
@@ -227,26 +230,26 @@ const clickOnItem = (e) => {
     }
   }
 }
-// const remove_input_function = (e) => {
-//   console.log(e);
-// }
-
+const closeBagInput = (e) => {
+  const icon_bag = e.target.parentNode.querySelector('.bag')
+  const span_item = e.target.parentNode.parentNode.querySelector('.span-bag')
+  span_item.textContent = e.target.value
+  e.target.value = ''
+  e.target.classList.add('nowiev')
+  icon_bag.classList.remove('nowiev')
+}
  
 const clickOnBag = (e) => {
+  const item_back = e.target.parentNode.querySelector('.itemInput')
   if (e.target.tagName === 'IMG') {
     if (e.target.classList.contains('bag')) {
       e.target.classList.add('nowiev')
-      e.target.parentNode.querySelector('.itemInput').classList.remove('nowiev')
-
-
-
+      item_back.classList.remove('nowiev')
     }
   }
-  
+  item_back.addEventListener('change', closeBagInput )
 }
-
-
-  // item_back.addEventListener('change', remove_input_function)
+  
   inputRef.addEventListener('change', addItemToList)
   list_of_all_items.addEventListener("click", clickOnItem)
   list_of_all_items.addEventListener("click", clickOnBag)
