@@ -23,7 +23,7 @@ width: 540px;
 
 .header_contain{
   position: absolute;
- top:10%;
+ top:13%;
 left:50%;
 transform:translate(-50%, -50%);
   display: flex;
@@ -61,6 +61,7 @@ top: 7%;
 #title{
   font-size: 1.25rem;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #input{
@@ -86,7 +87,7 @@ top: 7%;
 
 #all_items{
   font-size: 1.5rem;
-  width: 75%;
+  width: 90%;
   line-height: 3;
 }
 
@@ -163,6 +164,45 @@ margin-top: 300px;
 }
 
 
+
+
+
+.img_theme_wrap_list{
+left: 60%;
+top: 6%;
+}
+
+
+.class1{
+	 display:none;
+	 position:relative;
+   }
+   .class2{
+    background-color: white;
+    box-shadow: 0 0 7px #000; /* Добавляем тень для блока */
+     animation: ani 0.9s forwards;
+     
+     border: 1px solid red;
+     border-radius: 3px; 
+    position: absolute;
+    left: 41%;
+      top: 9%;
+	display:block;
+ 
+   }
+
+
+
+   @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  .span-bag{
+    font-family: cursive;
+    margin-left: 20%;
+  }
+
 /* ------------------------------------------------------------------------ TABLET VERSION ------------------------------------------------------------------- */
 
 @media screen and (min-width: 768px)and (max-width: 1439px){
@@ -202,6 +242,11 @@ margin-top: 300px;
   left: 70%;
   top: 10%;
 }
+
+.img_theme_wrap_list{
+  left: 69%;
+    top: 6%;
+}
 }
 
 
@@ -234,7 +279,7 @@ margin-top: 300px;
   
   .header_contain{
     position: absolute;
-   top:10%;
+   top:12%;
   left:50%;
   transform:translate(-50%, -50%);
     display: flex;
@@ -349,6 +394,11 @@ margin-top: 300px;
     width: 23px;
     height: 20px;
   
+}
+
+.img_theme_wrap_list{
+  left: 85%;
+    top: 5%;
 }
   }
 

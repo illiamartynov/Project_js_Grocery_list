@@ -51,3 +51,23 @@ body{
     background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%);
    
   }
+  .itemInput {
+    width: 30%;
+      border: 2px solid #BF6D30;
+      box-sizing: border-box;
+      border-radius: 6px;
+      resize: none;
+      outline: none;
+   }
+    
+  
+  
+  .itemInput:focus, .itemInput:active {
+    outline: none;
+    border: 2px solid #C3A56D;
+   }
+
+
+  .mt{
+    color: black;
+  }

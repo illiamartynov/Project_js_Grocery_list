@@ -25,4 +25,15 @@ function ChangeTheme()
     link.setAttribute("href", currentTheme);
 
     
+if(currentTheme == lightTheme){
+     document.querySelector('#setDfltBack_2time').addEventListener('click', () =>{
+    document.body.style.background = `#BF6D30`;
+  })
+  
+}
+else if(currentTheme == darkTheme){
+    document.querySelector('#setDfltBack_2time').addEventListener('click', () =>{
+        document.body.style.background = `#232946`;
+      }) 
+}
 }

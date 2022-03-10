@@ -1,11 +1,11 @@
 body{
  
-    background-color: darkblue			;
+    background-color: #232946			;
   }
   #groceries{
     
-    background-color: darkcyan	;
-    box-shadow: 10px 10px 24px 0px rgba(247, 0, 0, 0.5);  
+    background-color: #6670A3		;
+    box-shadow: 10px 10px 24px 0px rgba(238, 187, 195, 0.5);  
   }
   #input input{
     
@@ -14,11 +14,11 @@ body{
 
   
 .title{
-    color: darkolivegreen; 
+    color: #232946; 
     
-     text-shadow: rgb(202, 11, 11) 1px 1px 0, rgb(255, 0, 0) 2px 2px 0, 
-    rgb(255, 0, 0) 3px 3px 0, rgb(255, 0, 0) 4px 4px 0, 
-    rgb(255, 0, 0) 5px 5px 0;
+     text-shadow: rgb(238, 187, 195) 1px 1px 0, rgb(238, 187, 195) 2px 2px 0, 
+    rgb(238, 187, 195) 3px 3px 0, rgb(238, 187, 195) 4px 4px 0, 
+    rgb(238, 187, 195) 5px 5px 0;
     
   }
 
@@ -48,6 +48,25 @@ body{
   .createBtn {
     
    
-    background-image: linear-gradient(to right, #000000 0%, #0a0092 51%, #88eb06 100%);
+    background-image: linear-gradient(to right, #eebbc3 0%, #9B3D4C 51%, #eebbc3 100%);
    
   }
+  .mt{
+    color: white;
+  }
+  .itemInput:focus, .itemInput:active {
+    outline: none;
+    border: 2px solid #eebbc3;
+    
+
+
+    
+   }
+   .itemInput {
+    width: 30%;
+      border: 2px solid #9B3D4C;
+      box-sizing: border-box;
+      border-radius: 6px;
+      resize: none;
+      outline: none;
+   }
