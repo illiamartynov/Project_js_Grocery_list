@@ -190,6 +190,7 @@ const list_of_all_items = document.querySelector('#all_items')
 const inputRef = document.querySelector("#user_input")
 const item_back = document.querySelector('.itemInput')
 const item_span = document.querySelector('.span-bag')
+
 // const icon_bin = document.querySelector('.bin')
 
 
@@ -284,14 +285,22 @@ const clickOnBag = (e) => {
     if (e.target.classList.contains('bag')) {
             e.target.classList.add('nowiev')
       item_back.classList.remove('nowiev')
-    }
+    } 
+    if (e.target.classList.contains('bin')) {
+      console.log('delete it')
+      e.target.parentNode.parentNode.remove()
+    } 
   }
   item_back.addEventListener('change', closeBagInput )
 }
 
-const deleteItem = (elem) => {
-  elem.innerHTML = "";
-}
+// const deleteItem = (elem) => {
+//   elem.innerHTML = "";
+// }
+
+// const clickonDelet = (e) => {
+//   console.log(e)
+// }
 
 
 
@@ -299,3 +308,4 @@ const deleteItem = (elem) => {
   inputRef.addEventListener('change', addItemToList)
   list_of_all_items.addEventListener("click", clickOnItem)
   list_of_all_items.addEventListener("click", clickOnBag)
+  // list_of_all_items.addEventListener("click", clickonDelet)
