@@ -302,6 +302,10 @@ const clickOnBag = (e) => {
 //   console.log(e)
 // }
 
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('!!!!',localStorage.getItem('theme'))
+})
+
 
 
   // icon_bin.addEventListener('change', addItemToList)
