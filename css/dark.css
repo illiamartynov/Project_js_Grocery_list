@@ -1,0 +1,72 @@
+body{
+ 
+    background-color: #232946			;
+  }
+  #groceries{
+    
+    background-color: #6670A3		;
+    box-shadow: 10px 10px 24px 0px rgba(238, 187, 195, 0.5);  
+  }
+  #input input{
+    
+    border-bottom: 3px solid black;
+  }
+
+  
+.title{
+    color: #232946; 
+    
+     text-shadow: rgb(238, 187, 195) 1px 1px 0, rgb(238, 187, 195) 2px 2px 0, 
+    rgb(238, 187, 195) 3px 3px 0, rgb(238, 187, 195) 4px 4px 0, 
+    rgb(238, 187, 195) 5px 5px 0;
+    
+  }
+
+  .createBtn select {
+   
+    background-color: darkorange;
+  }
+
+     .createBtn select[disabled] {
+    color: rgba(0,0,0,.3);
+  }
+  
+  .createBtn select[disabled]::after {
+    color: rgba(0,0,0,.1);
+  }
+  
+  .createBtn::before {
+    background-color: rgba(0,0,0,.15);
+  }
+  
+  .createBtn::after {
+    color: rgba(0,0,0,.4);
+  }
+
+
+  
+  .createBtn {
+    
+   
+    background-image: linear-gradient(to right, #eebbc3 0%, #9B3D4C 51%, #eebbc3 100%);
+   
+  }
+  .mt{
+    color: white;
+  }
+  .itemInput:focus, .itemInput:active {
+    outline: none;
+    border: 2px solid #eebbc3;
+    
+
+
+    
+   }
+   .itemInput {
+    width: 30%;
+      border: 2px solid #9B3D4C;
+      box-sizing: border-box;
+      border-radius: 6px;
+      resize: none;
+      outline: none;
+   }

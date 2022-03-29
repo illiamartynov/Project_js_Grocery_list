@@ -1,0 +1,73 @@
+body{
+ 
+    background-color: #BF6D30			;
+  }
+  #groceries{
+    
+    background-color: #ffe4c4	;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  
+  }
+  #input input{
+    
+    border-bottom: 3px solid black;
+  }
+
+  
+.title{
+    color: #fff5ee; 
+    
+     text-shadow: rgb(128,128,128) 1px 1px 0, rgb(128,128,128) 2px 2px 0, 
+    rgb(128,128,128) 3px 3px 0, rgb(128,128,128) 4px 4px 0, 
+    rgb(128,128,128) 5px 5px 0;
+    
+  }
+
+  .createBtn select {
+   
+    background-color: #C3A56D;
+  }
+
+     .createBtn select[disabled] {
+    color: rgba(0,0,0,.3);
+  }
+  
+  .createBtn select[disabled]::after {
+    color: rgba(0,0,0,.1);
+  }
+  
+  .createBtn::before {
+    background-color: rgba(0,0,0,.15);
+  }
+  
+  .createBtn::after {
+    color: rgba(0,0,0,.4);
+  }
+
+
+  
+  .createBtn {
+    
+   
+    background-image: linear-gradient(to right, #C3A56D 0%, #88611B 51%, #C3A56D 100%);
+   
+  }
+  .itemInput {
+    width: 30%;
+      border: 2px solid #BF6D30;
+      box-sizing: border-box;
+      border-radius: 6px;
+      resize: none;
+      outline: none;
+   }
+    
+  
+  
+  .itemInput:focus, .itemInput:active {
+    outline: none;
+    border: 2px solid #C3A56D;
+   }
+
+
+  .mt{
+    color: black;
+  }

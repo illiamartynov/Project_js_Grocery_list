@@ -3,22 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
   <link rel="stylesheet" href="./css/all_styles.css">
-  <title>Grocery List</title>
+  <link rel="stylesheet" type="text/css" href="./css/light.css" id="theme-link">
+  <style>
+    .nowiev{
+      display: none;
+    }
+  </style>
 </head>
 <body>
+
+  <header>
+    
+        
+     
+<div class="img_theme_wrap img_theme_wrap_list">
+  <img class="img_switch_themes" id="theme-button" src="./images/moon.png" alt="">
+</div>
+    
+     
+     
+    
+   </header> 
 
   <main>
     <div class="container">
       <div id="groceries">
         <div id="title">
-          <h1>Grocery List</h1>
+          <h1 class="mt">Grocery List</h1>
         </div>
-        <div id="input">
+        <div  id="input">
           <i id="pencil" class="fas fa-pencil-alt"></i>
-          <input id="user_input">
+          <div class="class1" id="tips">Введите не менее 4 <br> и не более 15 символов</div>
+          
+           
+           
+                                          
+          <input type="text" pattern="[\w]{1,15}" placeholder="Введите слово" title="Без пробелов в начале!"  id="user_input" onFocus="document.all['tips'].className='class2';" type="text" onblur="document.all['tips'].className='class1';">
+        
         </div>
         <ul id="all_items">
           
@@ -27,6 +52,10 @@
     </div>
   </main>
   
-  <script src="../js/script.js"></script>
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/switch_themes.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/change_color.js"></script>
 </body>
 </html>
