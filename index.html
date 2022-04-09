@@ -7,10 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
   <link rel="stylesheet" href="./css/all_styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/light.css" id="theme-link">
     <title>Menu</title>
 </head>
 <body>
+   <header>
+     <div class="header_contain">
+       <div  class="header_style">
+        <div class="div_title" id="title">
+          <h1 class="title">Grocery List App</h1>
+        </div>
+        
+     </div>
+<div class="img_theme_wrap">
+  <img class="img_switch_themes" id="theme-button" src="./images/moon.png" alt="">
+</div>
+     <div class="menu">
+      <a class="menu-triger" href="#"></a>
+      <div class="menu-popup">
+          <a class="menu-close" href="#"></a>
+          <ul class="menu_list">
+              <li class="item_of_menu invis_item_of_back" id="submit"><a href="#">Set Random Backgrounf</a></li>
+              <li class="item_of_menu invis_item_of_back" id="setDfltBack"><a href="#">Set Default Background</a></li>		
+              <li class="item_of_menu"><a href="#">Developers</a></li>
+              
+          </ul>						
+      </div>
+  </div>
+     </div>
+     
     
+   </header> 
 
    
 
@@ -19,13 +46,11 @@
     <div class="container">
     
       <div id="groceries">
-        <div class="div_title" id="title">
-          <h1 class="title">Grocery List App</h1>
-        </div>
+        
         <div class="button_menu">
-         <button class="createBtn"> <a class="text_button" href="./list.html">Create&nbsp;List</a></button>
-         <button id="submit" class="createBtn"><span class="text_button">Set Random Background</span> </button>
-         <button id="setDfltBack" class="createBtn"><span class="text_button">Set Default Background</span> </button>
+         <button class="createBtn non_opacity_btn"> <a class="text_button" href="./list.html">Create&nbsp;List</a></button>
+         <button id="submit_2time" class="createBtn opacity_btn"><span class="text_button">Set Random Background</span> </button>
+         <button id="setDfltBack_2time" class="createBtn opacity_btn"><span class="text_button">Set Default Background</span> </button>
         </div>
          
         
@@ -33,7 +58,12 @@
     </div>
     </div>
   </main>
-    <script src="../js/script.js"></script>
-    <script src="../js/change_color.js"></script>
+
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/switch_themes.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/change_color.js"></script>
+    
 </body>
 </html>
